@@ -20,8 +20,8 @@
     },
     {
       "path": "MATERIALS-README.txt",
-      "bytes": 637,
-      "sha256": "d9a2fa790ff1dcf47d2dd5266179ceed24658f86c3739d1662f478f6f9490c6d",
+      "bytes": 629,
+      "sha256": "7116aaecb4a22991e7401a02ba9ce93306e7e6cf25b32eb3d44eb7def70e149d",
       "origin": {
         "kind": "research-metadata-or-notice"
       }
