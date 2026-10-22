@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-22",
+  "python_tests": {
+    "passed": 46,
+    "failed": 0,
+    "skipped": 0
+  },
+  "webui_mock_test": "passed",
+  "materials_hash_verification": {
+    "files": 38,
+    "failed": 0
+  },
+  "full_firmware_sha256_rechecked": true,
+  "device_operations_during_publication": false,
+  "scope": "Offline tests and archived historical device results; no new device boot acceptance"
+}

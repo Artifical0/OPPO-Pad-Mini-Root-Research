@@ -1,0 +1,74 @@
+[
+  {
+    "published": "evidence/500/normal-boot-before-unlock.json",
+    "source_relative_path": "root-work/gbl/deploy-original-20261012_144259/normal-boot-check.json",
+    "original_sha256": "f45e81aeff084e56d1f956bc543ee521db831cdcd766f14716f6eb93cd1e00a9",
+    "redacted": true
+  },
+  {
+    "published": "evidence/500/gbl-deployment.json",
+    "source_relative_path": "root-work/gbl/deploy-original-20261012_144259/result.json",
+    "original_sha256": "44f5964f7022d07ebd6b0547bbd524f6ce24b6412c41938d18349e00cc1c249d",
+    "redacted": true
+  },
+  {
+    "published": "evidence/500/ksu-patch.json",
+    "source_relative_path": "root-work/patched/KernelSU-v3.3.0-slot-b-20261012_145008/patch-result.json",
+    "original_sha256": "d475007dd746db7c8db7a004e60014be952a9717d82c50509ac9b6220690a419",
+    "redacted": true
+  },
+  {
+    "published": "evidence/500/ksu-flash.json",
+    "source_relative_path": "root-work/patched/KernelSU-v3.3.0-slot-b-20261012_145008/flash-result.json",
+    "original_sha256": "b3569ae4ac367f37241a967333b24fa0d15e3cec3b108f4f2f09b18cb5d79c02",
+    "redacted": true
+  },
+  {
+    "published": "evidence/500/ksu-after-normal-reboot.json",
+    "source_relative_path": "root-work/patched/KernelSU-v3.3.0-slot-b-20261012_145008/root-after-normal-reboot.json",
+    "original_sha256": "30278ddc1f6339ac655404306debee3c83b68ea5b165f50fad72ebe51ef4e593",
+    "redacted": true
+  },
+  {
+    "published": "evidence/17-103/completed.json",
+    "source_relative_path": "root-work/ColorOS17-17.0.0.103-analysis/preparation-20261014_101454/upgrade-completed-20261014.json",
+    "original_sha256": "88cafe44d11137d3e1f819c4eff0fdb685aad1c4dfabcc315609b166acde3555",
+    "redacted": true
+  },
+  {
+    "published": "evidence/17-103/first-boot.json",
+    "source_relative_path": "root-work/ColorOS17-17.0.0.103-analysis/preparation-20261014_101454/boot-verification-20261014_121648/verification.json",
+    "original_sha256": "2fae9569526ad2d59a57b37ef9522f109b299dd14fa45e881c2f277088b6023e",
+    "redacted": true
+  },
+  {
+    "published": "evidence/17-103/second-boot.json",
+    "source_relative_path": "root-work/ColorOS17-17.0.0.103-analysis/preparation-20261014_101454/boot-verification-20261014_122002/verification.json",
+    "original_sha256": "2b818287272dbf37d99b5c82238485101977c0b7d5f62b5a89f3d03fe30dd046",
+    "redacted": true
+  },
+  {
+    "published": "evidence/17-103/modules-enabled-boot.json",
+    "source_relative_path": "root-work/ColorOS17-17.0.0.103-analysis/preparation-20261014_101454/boot-verification-20261014_122633/verification.json",
+    "original_sha256": "485688a1adaae1cc4daaea1e9b875c9698d23b430eb3fe430f70f400b5416fdc",
+    "redacted": true
+  },
+  {
+    "published": "evidence/17-103/prepare-plan.json",
+    "source_relative_path": "root-work/ColorOS17-17.0.0.103-analysis/preparation-20261014_101454/prepare-plan.json",
+    "original_sha256": "8fe8445438ccc1023393d3824aa1dc32a3967bcbf1842000a70f9a5d71656321",
+    "redacted": true
+  },
+  {
+    "published": "evidence/17-103/payload-report.json",
+    "source_relative_path": "root-work/ColorOS17-17.0.0.103-analysis/17-payload-report.json",
+    "original_sha256": "ca9265a5b5a6da96368c90bb4ecd48103367f61faa53cad5bf6e152e48804e27",
+    "redacted": true
+  },
+  {
+    "published": "evidence/500/patch-normal-log.txt",
+    "source_relative_path": "root-work/gbl/compatibility-20261012_122445/current_b/patch-normal-log.txt",
+    "original_sha256": "894249b9888cd48cb0d47ed6552a0fbceb8155c1dbf5683366fd0f90ac99c627",
+    "redacted": true
+  }
+]

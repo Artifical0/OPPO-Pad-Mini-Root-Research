@@ -1,0 +1,985 @@
+{
+  "file": "OPD2515_17.0.0.103.zip",
+  "bytes": 9214591270,
+  "safety_decision": "NOT_AUTHORIZED_TO_FLASH_OR_REBOOT",
+  "signature_verified": false,
+  "note": "Partition declarations alone do not prove compatibility or authenticity.",
+  "container": "zip",
+  "ota_metadata": {
+    "android_version": "17",
+    "build_type": "user",
+    "display_os_version": "17.0",
+    "forbid_ota_local_update": "false",
+    "google_patch": "20260901",
+    "oplus_disable_postinstall": "no",
+    "oplus_hex_nv_id": "97",
+    "oplus_project_numbers": "25928",
+    "os_version": "V17.0.0",
+    "ota-id": "OPD2515_11.C.06_1060_202610061842",
+    "ota-property-files": "payload_metadata.bin:61:327802,payload.bin:61:9214585085,payload_properties.txt:9214585198:430,care_map.pb:9214585669:504,metadata:9214587261:1177,metadata.pb:9214586235:967       ",
+    "ota-required-cache": "0",
+    "ota-streaming-property-files": "payload.bin:61:9214585085,payload_properties.txt:9214585198:430,care_map.pb:9214585669:504,metadata:9214587261:1177,metadata.pb:9214586235:967       ",
+    "ota-type": "AB",
+    "ota_root_or_debug": "false",
+    "ota_version": "OPD2515_11.C.06_1060_202610061842",
+    "patch_type": "1",
+    "post-build": "OPPO/OPD2515/OP6548L1:17/CP2A.260605.016/B.1218030_142fc66_1415373:user/release-keys",
+    "post-build-incremental": "B.1218030_142fc66_1415373",
+    "post-sdk-level": "37",
+    "post-security-patch-level": "2026-09-01",
+    "post-timestamp": "1791277455",
+    "pre-device": "OP6548L1",
+    "product_name": "OPD2515",
+    "reserve-image-size": "0",
+    "security_patch": "2026-09-01",
+    "security_patch_vendor": "2026-09-01",
+    "version_name": "OPD2515_17.0.0.103(CN01)",
+    "version_name_show": "OPD2515_17.0.0.103(CN01)",
+    "wipe": "0"
+  },
+  "block_size": 4096,
+  "minor_version": 9,
+  "full_or_delta": "self_contained",
+  "requires_source_partition_data": false,
+  "partitions": [
+    {
+      "name": "system",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 1059053568,
+        "sha256": "14274648fc409c60b15df6c80e03274e9fb7bfc39c74251f27387b513c102be3"
+      },
+      "operations": {
+        "8": 502,
+        "0": 2,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "system_ext",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 957108224,
+        "sha256": "cd10d470cb83945d1a1700fd1f0b49e4a8ebb57f881335ee063ed0e7cf1e2130"
+      },
+      "operations": {
+        "8": 446,
+        "0": 9,
+        "6": 1,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "product",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 160088064,
+        "sha256": "241266cd0403c7e3e8f1ba20ba7d5f725c44c02853009c3f62e1a48178db635e"
+      },
+      "operations": {
+        "8": 76,
+        "0": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "vbmeta_system",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 4096,
+        "sha256": "8d9b0a8953fb28411a68fa3510b3111a2c21ba733f2141c96f8f68c8e0f1b748"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "boot",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 100663296,
+        "sha256": "2faacb0b20e07a4ce73cbbf9f7680aab17f0f7ea9519cb471fe0232eb3f9a388"
+      },
+      "operations": {
+        "8": 21,
+        "6": 26,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "init_boot",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 8388608,
+        "sha256": "202332d30498b52967da93e1272a871161ec04e4e5825c7b541cddcce9a64516"
+      },
+      "operations": {
+        "8": 2,
+        "6": 1,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "vendor_boot",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 100663296,
+        "sha256": "018f540f077db97ad9563e830719a53732bd31aafacea5ed784c5c78a15d6034"
+      },
+      "operations": {
+        "8": 14,
+        "6": 33,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "recovery",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 104857600,
+        "sha256": "b860b0d36f57884df540402f0fca6bff51a7ceae5843092f164c41b6dfb55e7e"
+      },
+      "operations": {
+        "8": 18,
+        "6": 31,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "vendor",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 462065664,
+        "sha256": "f87ccfad9da48c50dc4a34416f47b31dc939addca98b087dbdd9add0b59f6888"
+      },
+      "operations": {
+        "8": 220,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "vendor_dlkm",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 154214400,
+        "sha256": "654f55dbe95a72341074c58071f39960573036af54eec74a3a0a72fa10454444"
+      },
+      "operations": {
+        "8": 74
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "system_dlkm",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 14512128,
+        "sha256": "3c1538210e986317784a7bf0f29487858ea0ea15bd2b6804cbcffd93a85d3e5a"
+      },
+      "operations": {
+        "8": 6,
+        "0": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "odm",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 1957212160,
+        "sha256": "2ea51d0d98e0fc8a83066e60698565af467cc0f9cfbbaa3d711fe8a297b472d4"
+      },
+      "operations": {
+        "8": 877,
+        "0": 12,
+        "1": 43,
+        "6": 2
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "dtbo",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 25165824,
+        "sha256": "6a7914b1eaa818dedeeb7da3b982a8e61794b2f1943101a63ebae06b2b7378e4"
+      },
+      "operations": {
+        "8": 6,
+        "6": 5,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "vbmeta",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 12288,
+        "sha256": "26f56b4ed8c62c3844ced5a96b45b114749e4495c0a3d2940b440604f7ebdb48"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "vbmeta_vendor",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 4096,
+        "sha256": "8f337dd887a7a8b503365de83bf01a39f48341203044ffa108eee25cae5ad0d6"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "xbl",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 1163264,
+        "sha256": "f7bdf82e9fe617ab7ec30cfd042c8b242b6700bee404c4899b0ff5a666fa997b"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "xbl_config",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 389120,
+        "sha256": "e3676564849ad9e63ba7d5f406e7fc02b7c600be4bde4e1857e06975a3e85680"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "engineering_cdt",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 1048576,
+        "sha256": "6c5c7cf69c734c4dd98672b141e5697609225b13975a868e1367793c397f77d1"
+      },
+      "operations": {
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "uefi",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 2793472,
+        "sha256": "a8f69bb231e94ccb0b5c5f13da32b97f186cda69dd0ecd3f2ca71a2c1acc8c93"
+      },
+      "operations": {
+        "8": 2
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "aop",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 356352,
+        "sha256": "825e9765dfba2ae53fe4b99645495da8dd8b5b8eb1665e12bd9343b611006128"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "aop_config",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 28672,
+        "sha256": "ba2c63fe0acd742480a979202d68f661b76c76a2d084f2a410687678a1ccdb62"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "tz",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 4149248,
+        "sha256": "f2c4db8c9f060d925d1208e52dac4738efb8c21098467ab1f6d4612695b949cf"
+      },
+      "operations": {
+        "8": 2
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "hyp",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 1642496,
+        "sha256": "1336692cdafef62ba1928fcc5a7d994a4c2eff7470df4e2aad3e4eb731c4b1c0"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "modem",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 367001600,
+        "sha256": "232f862a758aa028f526f6972265ef2fb43647e34634c487bd551e6208165679"
+      },
+      "operations": {
+        "8": 55,
+        "1": 2,
+        "6": 118
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "bluetooth",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 10485760,
+        "sha256": "0744683bef6378ea737957f534859d4ceeb2cf4fe9a0a4c86e34f7b80a26cd46"
+      },
+      "operations": {
+        "8": 1,
+        "6": 4
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "abl",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 278528,
+        "sha256": "a62e30bf3ca6c4d0ffdb35e46d8003b3dcd5964946a7a01474ef18c262060d1a"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "dsp",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 77594624,
+        "sha256": "8dcba5d8c68cb152113ab43c166ca2bddb52b229b91a2fbd53b997fea03cbf7b"
+      },
+      "operations": {
+        "8": 31,
+        "6": 5,
+        "0": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "keymaster",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 3354624,
+        "sha256": "4ae025ade919db212a1290884d9365e4c0bfb78b9ef1d8dce9279f8bdfac45f7"
+      },
+      "operations": {
+        "8": 2
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "spuservice",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 94208,
+        "sha256": "f6bbf24e6ba7a3abde6462d885400d2b65d0bde66e74706f71cd2f3076bb3fe9"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "devcfg",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 57344,
+        "sha256": "643d59c4f6dec6c1f55e41bcb9ea63e1e8029b624c19cc1cddd92e6acc556f57"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "qupfw",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 65536,
+        "sha256": "52aaa160d709de8eca492a76bc70f17451f8930d96c08779fde561a4267d54fa"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "uefisecapp",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 208896,
+        "sha256": "db6a89fe6c50ed8bb9d3aabc2ea5b000b782c4d84439a4f0a75f5d5cb7e3ca89"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "imagefv",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 114688,
+        "sha256": "8038f9e6cf389b7ffc9552c28c7536114a23a129319e44a9550b250fd612ab86"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "shrm",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 184320,
+        "sha256": "80cb41afe44ff2ed44c97b50c6abf1c9f5fe8302dd03b1c764dd4735edcf7c0a"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "cpucp",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 446464,
+        "sha256": "70531068dfbaed9bd098363061e64c3b8ed8589396e578277b535db87476c842"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "featenabler",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 106496,
+        "sha256": "da9a112500831986636f3e952697441f8be1bf14928e49107c1dc947d3e89166"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "oplus_sec",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 1040384,
+        "sha256": "44a936335c49c5cb985f796c501bbe9e42788db30ac7a6269eca648eff3fe4d2"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "splash",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 3178496,
+        "sha256": "a6bf77a7056342b912ce7e6333097e896c9cf92677df1ec1976749760f43905d"
+      },
+      "operations": {
+        "8": 2
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "xbl_ramdump",
+      "category": "boot_chain",
+      "old": null,
+      "new": {
+        "bytes": 884736,
+        "sha256": "106f61e778c84ad86a49b021d821f146736f43dba647cbadf2bca06909e572bc"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "cpucp_dtb",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 16384,
+        "sha256": "db90a506470790f56a388e8aea496666d2db76bd68c750ba1bebe72ada15e458"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "soccp_debug",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 73728,
+        "sha256": "8d19ceb0f4a8070e03de4a1ba9395f791f0c05d5df0812d45f4e4264e7673f93"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "soccp_dcd",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 20480,
+        "sha256": "3c6ef50c1c0e54665139ed391e8442cefd809aaa4907057c1b8939d6f03162e0"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "pdp",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 356352,
+        "sha256": "2befd1ab332801750f2642ca1a677e2b50b8d95f7bb591b6ed6e0a31786e2393"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "pdp_cdb",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 16384,
+        "sha256": "714895507b77188c0d4c4c1f4d939e83df05cb4674559a796399d40bd338ef7d"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "my_product",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 2693484544,
+        "sha256": "2fd466f8e121d566f676a1750a38c9f53f0c68464c9fd323c9df625df50fd7e4"
+      },
+      "operations": {
+        "8": 709,
+        "0": 572,
+        "6": 3,
+        "1": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "my_engineering",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 335872,
+        "sha256": "55d540450eb704d5455672098be986f5b984b1f50118826c5e5bdc8c1f7e1be7"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "my_stock",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 3893870592,
+        "sha256": "60fafd7239b84bd9cd3a48801a3c1c6bfb40d2924b74a5b04f9da4f8bda7d71b"
+      },
+      "operations": {
+        "8": 1681,
+        "0": 169,
+        "1": 3,
+        "6": 4
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "my_heytap",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 335872,
+        "sha256": "083e1ebbbdb9866bd562a7f3b44e439d91c340231f32bc2f13e1308ff8e4ef2d"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "my_carrier",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 335872,
+        "sha256": "a2cb3ba9c11ff38be586dc83e1f5a22b4d2a1fe211f51cd3991dd02b6ee4cf61"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "my_region",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 7233536,
+        "sha256": "5f57f2aaee26876aa07be5e862debe446e2fe065a11e4e6d170b749106318f85"
+      },
+      "operations": {
+        "8": 4
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "my_bigball",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 335872,
+        "sha256": "d5fc02100b528046eaf468f6b605a560f909be8a7c14a44a2c6301ad7413869f"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "my_manifest",
+      "category": "system",
+      "old": null,
+      "new": {
+        "bytes": 696320,
+        "sha256": "4d76314e0847d5c850d6a0323f15f30bb794357ba05f81f765b1768c028eda8f"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "tme_seq_patch",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 8192,
+        "sha256": "35d85544a793890932c877a5da14c63a6a539223c9929e00055318fe03063b9b"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "hyp_ac_config",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 77824,
+        "sha256": "2710f20f2c6a56ed0b7574ce93b593d921c5784052304fbeb5324f86e97c32db"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "multiimgoem",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 12288,
+        "sha256": "28033de768e15e1e7570c2879f3dcd946a53e2bc222e04cd53203306f702a2f1"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "tme_fw",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 204800,
+        "sha256": "c8be16cda4f65e6af241c221f20401d942da36a2cd4abddac5ca314d0cfc141f"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "soccp",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 8388608,
+        "sha256": "22acea496ffe90880dd70a9a33fdd399ffa55cc98dbb44b3731d0b9772151128"
+      },
+      "operations": {
+        "8": 2,
+        "6": 2
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "multiimgqti",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 12288,
+        "sha256": "48a0898336819e52423995c57c11f3402c01413a73bd0ace22998aee1f73eb36"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "tme_config",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 45056,
+        "sha256": "96d1e0c5819a8e03202a9a8d797d6d8ace531f39e582d0bc6884550800027228"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "xbl_ac_config",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 45056,
+        "sha256": "eb4b14438ebef91405ff8420b5bde5fe5b0672c29cb47652927197721514230c"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "secretkeeper",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 1056768,
+        "sha256": "81a96cc649e5b158c5d8a8d09684716c15475fb322cb09122eb6900372100aec"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "tz_ac_config",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 61440,
+        "sha256": "88152a6c87423ae48222efb467defe514174dd0d33188b8394c296cf008ef9d5"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "tz_qti_config",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 122880,
+        "sha256": "297dd39f3cbeb01809ff9d49f9341b9007e18b5d59c6902651eec6d7afc79b79"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "dcp",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 8388608,
+        "sha256": "119a69fdbdee0351fd8f75bbf6c2f633b9684c08cd235da2eee57a2752e1ba0a"
+      },
+      "operations": {
+        "8": 1,
+        "6": 3
+      },
+      "uses_source_data": false
+    },
+    {
+      "name": "pvmfw",
+      "category": "firmware_or_other",
+      "old": null,
+      "new": {
+        "bytes": 901120,
+        "sha256": "55aa1236a8dddda2fbeb3dab6cbccab9c79efc9920a03484c2fab936294828d2"
+      },
+      "operations": {
+        "8": 1
+      },
+      "uses_source_data": false
+    }
+  ],
+  "boot_chain_declared": [
+    "vbmeta_system",
+    "boot",
+    "init_boot",
+    "vendor_boot",
+    "recovery",
+    "dtbo",
+    "vbmeta",
+    "vbmeta_vendor",
+    "xbl",
+    "xbl_config",
+    "abl",
+    "xbl_ramdump"
+  ],
+  "other_firmware_declared": [
+    "engineering_cdt",
+    "uefi",
+    "aop",
+    "aop_config",
+    "tz",
+    "hyp",
+    "modem",
+    "bluetooth",
+    "dsp",
+    "keymaster",
+    "spuservice",
+    "devcfg",
+    "qupfw",
+    "uefisecapp",
+    "imagefv",
+    "shrm",
+    "cpucp",
+    "featenabler",
+    "oplus_sec",
+    "splash",
+    "cpucp_dtb",
+    "soccp_debug",
+    "soccp_dcd",
+    "pdp",
+    "pdp_cdb",
+    "tme_seq_patch",
+    "hyp_ac_config",
+    "multiimgoem",
+    "tme_fw",
+    "soccp",
+    "multiimgqti",
+    "tme_config",
+    "xbl_ac_config",
+    "secretkeeper",
+    "tz_ac_config",
+    "tz_qti_config",
+    "dcp",
+    "pvmfw"
+  ],
+  "payload_major_version": 2,
+  "manifest_bytes": 327255,
+  "manifest_sha256": "6f78bc0ca3d57cc8fe006099e8b1ebd09ef35a4811e7109f0c02b646866972cc",
+  "metadata_signature_bytes": 523,
+  "payload_found": true,
+  "classification": "BOOT_OR_FIRMWARE_UPDATE"
+}

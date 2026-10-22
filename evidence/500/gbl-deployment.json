@@ -1,0 +1,58 @@
+{
+  "serial": "<REDACTED>",
+  "target_slot": "b",
+  "remote_stage": "/data/local/tmp/opd2515-gbl-original-20261012_144259",
+  "local_work": "<WORKSPACE>\\root-work\\gbl\\deploy-original-20261012_144259",
+  "block_write_attempts": [
+    {
+      "phase": "deploy_bds",
+      "source": "/data/local/tmp/opd2515-gbl-original-20261012_144259/BDS.efi",
+      "target": "/dev/block/by-name/efisp"
+    },
+    {
+      "phase": "deploy_original_signed_abl_b",
+      "source": "/data/local/tmp/opd2515-gbl-original-20261012_144259/abl-original.img",
+      "target": "/dev/block/by-name/abl_b"
+    }
+  ],
+  "rebooted": true,
+  "bootloader_unlocked": false,
+  "data_formatted": false,
+  "preflight_properties": [
+    "OPD2515",
+    "OPD2515",
+    "OPD2515_16.0.10.500(CN01)",
+    "6.12.58-android16-6-g7704a1ae279b-ab15213644-4k",
+    "_b",
+    "1",
+    "1"
+  ],
+  "signed_metadata_identical": true,
+  "image_arb_version": 0,
+  "payload_files": {
+    "abl-original.img": "0210487cbc59bdcdb03bb2ee61d9d80fffad8f2ccf35bc7d28d7d9569ad59802",
+    "BDS.efi": "d485e2de52ef7827fd6c5f6b1c56357da422f9a43f86e10b46a945bd17a4e49c",
+    "efisp/ABL_normal.efi": "6fa5baed02ca05743491afe32e30470f1ec1afb0cca94fe1cd6dbd560242e503",
+    "efisp/BOOTENTRIES": "055b05099826d062e6bec3cfe0e8f1511d910ea407e35666516d51db7a27db70",
+    "rollback/abl_b.img": "7a2614079e17a417bb756ed449fed0d71d90a234deba3a74fc18ccfd7fc7b7ee",
+    "rollback/efisp.img": "bbd05cf6097ac9b1f89ea29d2542c1b7b67ee46848393895f5a9e43fa1f621e5",
+    "efisp/tools/ArbTools.efi": "04465d99fc80626ce4b3cc218077129dcef770cf441cc141ed523da41b5334b1",
+    "efisp/tools/BLTools.efi": "daddd2bebcab33eb8ad53868b3cde0f75e2023fa3af175125ee8eb63a53178fa",
+    "efisp/tools/ENTRIES": "0fea2a1630cef51000e9a5523f3bb859e7f062b63e51a0033077b89bb37872f3",
+    "efisp/tools/RebootTools.efi": "983f549a62b52c705f1b0e01eaaeb72c05d96184fd4c200ac3547d003244431a"
+  },
+  "new_abl_sha256": "0210487cbc59bdcdb03bb2ee61d9d80fffad8f2ccf35bc7d28d7d9569ad59802",
+  "new_efisp_sha256": "3b98361af150582825230dcc840eb12aefae42a3d4aae5bbf185c9cf4cf766df",
+  "original_abl_b_sha256": "7a2614079e17a417bb756ed449fed0d71d90a234deba3a74fc18ccfd7fc7b7ee",
+  "original_efisp_sha256": "bbd05cf6097ac9b1f89ea29d2542c1b7b67ee46848393895f5a9e43fa1f621e5",
+  "original_abl_a_sha256": "7021eaf3f1ea54168a4a1755e7716363d8c42d947e0a8fe8d5b2cf18d91d142c",
+  "persist_boot_tree_created": true,
+  "status": "awaiting_recovery_format_and_android_unlock_verification",
+  "gbl_menu_confirmed_by_user": true,
+  "normal_boot_verified": true,
+  "user_accepted_data_wipe": true,
+  "bltools_done_reported_by_user": true,
+  "fastboot_connected": true,
+  "fastboot_serial": "<REDACTED>",
+  "windows_driver": "Google signed Android Bootloader Interface; oem56.inf; D00D instance only"
+}

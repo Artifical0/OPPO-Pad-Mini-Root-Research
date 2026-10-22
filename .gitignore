@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+publication-work/
+research-materials/
+root-work/
+extracted_images/
+*.img
+*.efi
+*.exe
+*.apk
+*.so
+*.ko
+*.zip
+*.tar
+*.der
+OPD2515-OTA-Helper/dist/

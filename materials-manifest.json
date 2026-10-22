@@ -1,0 +1,357 @@
+{
+  "schema": 1,
+  "packaged_at": "2026-10-22",
+  "model": "OPD2515",
+  "scope": [
+    "16.0.10.500(CN01)",
+    "17.0.0.103(CN01)"
+  ],
+  "no_automatic_execution": true,
+  "private_device_data_excluded": true,
+  "files": [
+    {
+      "path": "extracted_images/xbl_config.img",
+      "bytes": 385024,
+      "sha256": "4794f59bc7c82b7d9aab518225c5af797dc51b76a27cf991cc590e4a6a73936b",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "MATERIALS-README.txt",
+      "bytes": 637,
+      "sha256": "d9a2fa790ff1dcf47d2dd5266179ceed24658f86c3739d1662f478f6f9490c6d",
+      "origin": {
+        "kind": "research-metadata-or-notice"
+      }
+    },
+    {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/candidates-offline/ABL_normal-17.efi",
+      "bytes": 782336,
+      "sha256": "2efe7efced64c4caaea203277245e16ff0523e800a82ff87cc44642f8b3f4170",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/candidates-offline/KSU-3.3.1-init_boot-17.img",
+      "bytes": 8388608,
+      "sha256": "ddd0e19a562a33040f99282e23db848b4371d66b88581952843be33bfd516fc3",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/images-17/init_boot.img",
+      "bytes": 8388608,
+      "sha256": "202332d30498b52967da93e1272a871161ec04e4e5825c7b541cddcce9a64516",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/KernelSU_v3.3.1_32680-release.apk",
+      "bytes": 13637206,
+      "sha256": "b4a059ace71de2fa65cc7f12b1c58d55fc23ab25e057ee4230ce779742abe450",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/KernelSU_v3.3.1_32680-release.apk"
+      }
+    },
+    {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/ksud-x86_64-pc-windows-gnu.exe",
+      "bytes": 8043904,
+      "sha256": "c259b0111a4fc6ab21f0f1a6d56b66cf87b377e3f87325340c8221fff904b88f",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/ksud-x86_64-pc-windows-gnu.exe"
+      }
+    },
+    {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/ksuinit-aarch64",
+      "bytes": 603008,
+      "sha256": "365c66e5435a9ecdb3dbb23ceda2d9253568defeee3682af95220087094eff5d",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/ksuinit-aarch64"
+      }
+    },
+    {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/lkm-aarch64-android16-6.12_kernelsu.ko",
+      "bytes": 404928,
+      "sha256": "7e25d68419d08535d35e3630d9f0ff1a08e97a7026d36e878991eecb13554d9f",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/lkm-aarch64-android16-6.12_kernelsu.ko"
+      }
+    },
+    {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/preparation-20261014_101454/BOOTENTRIES-17.txt",
+      "bytes": 126,
+      "sha256": "e6723993a947e43e87c3f10ee2c067561c43a4be2e8eca24b6199828abd853c3",
+      "origin": {
+        "kind": "research-metadata-or-notice"
+      }
+    },
+    {
+      "path": "root-work/coolapk-original/oppo_pad_mini_root_file/abl_a.img",
+      "bytes": 1048576,
+      "sha256": "0210487cbc59bdcdb03bb2ee61d9d80fffad8f2ccf35bc7d28d7d9569ad59802",
+      "origin": {
+        "kind": "original-post-material",
+        "url": "https://www.coolapk.com/feed/73496160",
+        "binary_build_commit_known": false
+      }
+    },
+    {
+      "path": "root-work/gbl/compatibility-20261012_122445/current_b/ABL_normal.efi",
+      "bytes": 774144,
+      "sha256": "6fa5baed02ca05743491afe32e30470f1ec1afb0cca94fe1cd6dbd560242e503",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/gbl/deploy-original-20261012_144259/payload/BDS.efi",
+      "bytes": 290816,
+      "sha256": "d485e2de52ef7827fd6c5f6b1c56357da422f9a43f86e10b46a945bd17a4e49c",
+      "origin": {
+        "kind": "original-post-material",
+        "url": "https://www.coolapk.com/feed/73496160",
+        "binary_build_commit_known": false
+      }
+    },
+    {
+      "path": "root-work/gbl/deploy-original-20261012_144259/payload/efisp/tools/ArbTools.efi",
+      "bytes": 28672,
+      "sha256": "04465d99fc80626ce4b3cc218077129dcef770cf441cc141ed523da41b5334b1",
+      "origin": {
+        "kind": "original-post-material",
+        "url": "https://www.coolapk.com/feed/73496160",
+        "binary_build_commit_known": false
+      }
+    },
+    {
+      "path": "root-work/gbl/deploy-original-20261012_144259/payload/efisp/tools/BLTools.efi",
+      "bytes": 28672,
+      "sha256": "daddd2bebcab33eb8ad53868b3cde0f75e2023fa3af175125ee8eb63a53178fa",
+      "origin": {
+        "kind": "original-post-material",
+        "url": "https://www.coolapk.com/feed/73496160",
+        "binary_build_commit_known": false
+      }
+    },
+    {
+      "path": "root-work/gbl/deploy-original-20261012_144259/payload/efisp/tools/ENTRIES",
+      "bytes": 93,
+      "sha256": "0fea2a1630cef51000e9a5523f3bb859e7f062b63e51a0033077b89bb37872f3",
+      "origin": {
+        "kind": "original-post-material",
+        "url": "https://www.coolapk.com/feed/73496160",
+        "binary_build_commit_known": false
+      }
+    },
+    {
+      "path": "root-work/gbl/deploy-original-20261012_144259/payload/efisp/tools/RebootTools.efi",
+      "bytes": 32768,
+      "sha256": "983f549a62b52c705f1b0e01eaaeb72c05d96184fd4c200ac3547d003244431a",
+      "origin": {
+        "kind": "original-post-material",
+        "url": "https://www.coolapk.com/feed/73496160",
+        "binary_build_commit_known": false
+      }
+    },
+    {
+      "path": "root-work/gbl-source/submodules/ablfvextractor/build/extractfv.exe",
+      "bytes": 98654,
+      "sha256": "3381bdaec1270aaecf7c0d2e46158409c717301d1cd3e684b973b79c8530f0db",
+      "origin": {
+        "kind": "local-windows-build",
+        "source_commit": "2cf345a299df3f8b7172d6ad2fa5985e67fe53d6"
+      }
+    },
+    {
+      "path": "root-work/gbl-source/submodules/patcher/build/patch_abl.exe",
+      "bytes": 96414,
+      "sha256": "f2219fc52785fef65b3748cd9011ff64a119aeec33b62b9c5c86989b394cd7f6",
+      "origin": {
+        "kind": "local-windows-build",
+        "source_commit": "2cf345a299df3f8b7172d6ad2fa5985e67fe53d6"
+      }
+    },
+    {
+      "path": "root-work/ota-diagnostics/pre17-live-20261014_101632/efi-readonly-backup/ABL_normal.efi",
+      "bytes": 774144,
+      "sha256": "6fa5baed02ca05743491afe32e30470f1ec1afb0cca94fe1cd6dbd560242e503",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/ota-diagnostics/pre17-live-20261014_101632/efi-readonly-backup/BOOTENTRIES",
+      "bytes": 56,
+      "sha256": "055b05099826d062e6bec3cfe0e8f1511d910ea407e35666516d51db7a27db70",
+      "origin": {
+        "kind": "research-metadata-or-notice"
+      }
+    },
+    {
+      "path": "root-work/partitions/locked-20261012_120915/abl_b.img",
+      "bytes": 1048576,
+      "sha256": "7a2614079e17a417bb756ed449fed0d71d90a234deba3a74fc18ccfd7fc7b7ee",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/partitions/locked-20261012_120915/boot_b.img",
+      "bytes": 100663296,
+      "sha256": "5fd79d25971d171eb18740d37a6fcda56a289bcc4470c642964c988c8b025e72",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/partitions/locked-20261012_120915/init_boot_b.img",
+      "bytes": 8388608,
+      "sha256": "4a7e06fa940b83657b26f5d4a8a3a3f83cec3f906d0c416e85282ca4993d4b9f",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/partitions/locked-20261012_120915/xbl_config_b.img",
+      "bytes": 471040,
+      "sha256": "e094ec902349d1ffd2a83d37c1bc54b03187f6bf5a41785381687dc5f8b3619c",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/patched/KernelSU-v3.3.0-slot-b-20261012_145008/kernelsu_patched-init_boot.img",
+      "bytes": 8388608,
+      "sha256": "d30bb67358aee1a5ef3b2ba88aeb68220d14f8e68c67e9a0cb5019fce845b75a",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/patched/KernelSU-v3.3.1-current-b-20261013/current-init_boot_b.img",
+      "bytes": 8388608,
+      "sha256": "ca81b0067110ca3cff09b19c9ca15eed46172d4b5adfc5c8db25d79ddb34666f",
+      "origin": {
+        "kind": "firmware-input-or-local-patched-output",
+        "scope": "OPD2515 exact firmware only; see docs and evidence"
+      }
+    },
+    {
+      "path": "root-work/preload-release/preload.so",
+      "bytes": 89840,
+      "sha256": "8d7c1957b1485f351238cbb1b55afc5953e5d2285f523a85357966a78ae09fb6",
+      "origin": {
+        "kind": "local-build-for-500",
+        "source_commit": "18808341a788c2ccb5fb3f071d37d6009c959199",
+        "history": "Includes successful temporary su session and earlier panic/detection reboot failures"
+      }
+    },
+    {
+      "path": "root-work/tools/KernelSU-v3.3.0.apk",
+      "bytes": 10777987,
+      "sha256": "c197060ecb89702e7d54a4c95e29cf5e8d97369bbbb436979ab7fd6bcde7b077",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/KernelSU_v3.3.0_32601-release.apk"
+      }
+    },
+    {
+      "path": "root-work/tools/ksud-x86_64-pc-windows-gnu.exe",
+      "bytes": 6635087,
+      "sha256": "f9880fbbb3751d847dd1fbe3ea5939f592c28887ff274cd5ddb090ed6c751ee0",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/ksud-x86_64-pc-windows-gnu.exe"
+      }
+    },
+    {
+      "path": "root-work/tools/ksuinit-aarch64",
+      "bytes": 607360,
+      "sha256": "b49fff3252cdcd14bf80472becbd96c4f17028a632b364e8d455d335b94f1345",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/ksuinit-aarch64"
+      }
+    },
+    {
+      "path": "root-work/tools/lkm-aarch64-android16-6.12_kernelsu.ko",
+      "bytes": 386624,
+      "sha256": "877286f81d500c4ec546c96e9718c186b7379573c97ba5d5a35dd9a91465d076",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/lkm-aarch64-android16-6.12_kernelsu.ko"
+      }
+    },
+    {
+      "path": "sources/GBL-LICENSE-GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "origin": {
+        "kind": "research-metadata-or-notice"
+      }
+    },
+    {
+      "path": "sources/gbl_root_canoe-2cf345a.zip",
+      "bytes": 22897193,
+      "sha256": "b02a48dba08ea24a5fdabf6db40e3fffcfa929b06d325420db184488f84d9b45",
+      "origin": {
+        "kind": "upstream-source-snapshot",
+        "url": "https://github.com/ditvelo/gbl_root_canoe/tree/2cf345a299df3f8b7172d6ad2fa5985e67fe53d6"
+      }
+    },
+    {
+      "path": "sources/KernelSU-v3.3.0-932014ab5b2c.zip",
+      "bytes": 3517816,
+      "sha256": "981145c0ac13de5084b415a3ca6e12d3b5235df9fcc667c0d17aec7ac3691e0b",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://codeload.github.com/tiann/KernelSU/zip/932014ab5b2c9b74a3d11e2ec4d17dd10fc9442e"
+      }
+    },
+    {
+      "path": "sources/KernelSU-v3.3.1-0c0fdb960178.zip",
+      "bytes": 4540489,
+      "sha256": "9cd883dd90f2dc00a9605d43ec082a8f16690481a4b8739384f470e6962fd896",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://codeload.github.com/tiann/KernelSU/zip/0c0fdb960178fa12d80d6cbcfdcb6ad8be6a865d"
+      }
+    },
+    {
+      "path": "sources/x9u-preload-builder-18808341a788.zip",
+      "bytes": 67646,
+      "sha256": "e368956e329414f7eff569adb3e62c81e594d53c4f083bcaedde91b5980ed6f9",
+      "origin": {
+        "kind": "upstream",
+        "url": "https://codeload.github.com/koaaN/x9u-preload-builder/zip/18808341a788c2ccb5fb3f071d37d6009c959199"
+      }
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1753,
+      "sha256": "519c2523fcbe5732ffbc5c2a57f50028fad1210e9ac93588f68c466ab1ab2425",
+      "origin": {
+        "kind": "research-metadata-or-notice"
+      }
+    }
+  ]
+}

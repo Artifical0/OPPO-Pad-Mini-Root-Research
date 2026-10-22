@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-12T15:34:05",
+  "serial": "<REDACTED>",
+  "target": "init_boot_b",
+  "image_sha256": "d30bb67358aee1a5ef3b2ba88aeb68220d14f8e68c67e9a0cb5019fce845b75a",
+  "android_unlock_slot_evidence": "android-preflash-unlocked.json",
+  "flashed": true,
+  "readback_verified": true,
+  "reboot_sent": true,
+  "flash_exit_code": 0,
+  "root_first_check_passed": true
+}

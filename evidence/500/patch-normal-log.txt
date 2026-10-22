@@ -1,0 +1,13 @@
+Warning: Failed to patch ABL GBL
+Patch mode: normal (GBL + OPlus warning/fastboot, boot state transparent)
+Boot state anchor found at 0x25464 (W27, discovery only, not patched)
+Found source LDRB at 0x23BEC: LDRB W27,[X8,#0x5D5](0 bounces)
+Global variable offset (for OPlus patches): 0x5D5
+Warning message ADRL offset: 0x76B0
+Register W8 is used for warning jump at 0x769C
+Found source LDRB at 0x768C: LDRB W8,[X26,#0x5D5](0 bounces)
+Warning jump source var: 0x5D5 Matched
+Patched CBZ at 0x769C to use WZR, warning disabled
+Patched fastboot warning jump at 0x6B5C to always jump, fastboot always enabled
+Saved to .\ABL_normal.efi
+patcher_exit_code=0

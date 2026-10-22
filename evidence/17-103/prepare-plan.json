@@ -1,0 +1,586 @@
+{
+  "schema": "OPD2515-17.0.0.103-exact-v1",
+  "package_sha256": "aeeb3029c64f3a7251bf861325a21388c1817739c8684155ba7daa71f6beb8d5",
+  "target_report_sha256": "9957e79d63cd060df0ec5cf30332418fc6eee1b6a5bd58f7053ebd71dedb5f35",
+  "source_slot": "b",
+  "target_slot": "a",
+  "experimental_new_xbl_old_abl_runtime_verified": false,
+  "apply_scope": [
+    "init_boot_a",
+    "abl_a",
+    "persist EFI files and BOOTENTRIES"
+  ],
+  "never_performs": [
+    "OTA install",
+    "slot switch",
+    "reboot",
+    "wipe",
+    "unlock/lock",
+    "ARB mutation"
+  ],
+  "rollback_scope": "Only this transaction's init_boot/ABL/EFI changes; not OTA/firmware/data downgrade",
+  "source_partitions": {
+    "vendor_boot": {
+      "bytes": 100663296,
+      "sha256": "c07741c201590d00fd069e65f4e41d1a975c417c74af1296de95545b9cfda006",
+      "path": "/dev/block/by-name/vendor_boot_b",
+      "device": "/dev/block/sde67",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/ota-diagnostics/B110P02-20261013_092750/vendor_boot_b.img",
+      "existing_backup_verified": true
+    },
+    "init_boot": {
+      "bytes": 8388608,
+      "sha256": "ca81b0067110ca3cff09b19c9ca15eed46172d4b5adfc5c8db25d79ddb34666f",
+      "path": "/dev/block/by-name/init_boot_b",
+      "device": "/dev/block/sde73",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/patched/KernelSU-v3.3.1-current-b-20261013/current-init_boot_b.img",
+      "existing_backup_verified": true
+    },
+    "vbmeta": {
+      "bytes": 65536,
+      "sha256": "55f24d98102f2decc2ebe23cda04be14593740344f844ddc6e4940dd7d30c970",
+      "path": "/dev/block/by-name/vbmeta_b",
+      "device": "/dev/block/sde59",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/partitions/locked-20261012_120915/vbmeta_b.img",
+      "existing_backup_verified": true
+    },
+    "boot": {
+      "bytes": 100663296,
+      "sha256": "5fd79d25971d171eb18740d37a6fcda56a289bcc4470c642964c988c8b025e72",
+      "path": "/dev/block/by-name/boot_b",
+      "device": "/dev/block/sde56",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/partitions/locked-20261012_120915/boot_b.img",
+      "existing_backup_verified": true
+    },
+    "xbl": {
+      "bytes": 3670016,
+      "sha256": "4392592354a6b0e8acc5ab035644bdbc6d157a0e1e3ad0f0274360a0dbfe2374",
+      "path": "/dev/block/by-name/xbl_b",
+      "device": "/dev/block/sdc1",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/ota-diagnostics/B110P02-20261013_092750/xbl_b.img",
+      "existing_backup_verified": true
+    },
+    "xbl_config": {
+      "bytes": 471040,
+      "sha256": "e094ec902349d1ffd2a83d37c1bc54b03187f6bf5a41785381687dc5f8b3619c",
+      "path": "/dev/block/by-name/xbl_config_b",
+      "device": "/dev/block/sdc2",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/partitions/locked-20261012_120915/xbl_config_b.img",
+      "existing_backup_verified": true
+    },
+    "dtbo": {
+      "bytes": 25165824,
+      "sha256": "d52feb19550409ee68bc16fd4133d6cdab89480d9c393a2842b915c4e15e9c31",
+      "path": "/dev/block/by-name/dtbo_b",
+      "device": "/dev/block/sde60",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/ota-diagnostics/B110P02-20261013_092750/dtbo_b.img",
+      "existing_backup_verified": true
+    },
+    "abl": {
+      "bytes": 1048576,
+      "sha256": "0210487cbc59bdcdb03bb2ee61d9d80fffad8f2ccf35bc7d28d7d9569ad59802",
+      "path": "/dev/block/by-name/abl_b",
+      "device": "/dev/block/sde52",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/coolapk-original/oppo_pad_mini_root_file/abl_a.img",
+      "existing_backup_verified": true
+    }
+  },
+  "source_firmware": {
+    "aop": {
+      "prefix_bytes": 356352,
+      "sha256": "aeb931c18324a7ebdbb8e9bc05204c2691d6e583fb60d5ad3b3df85194d3611e",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "aop_config": {
+      "prefix_bytes": 28672,
+      "sha256": "5ea9d63982c4723fccd42368ed8cb7c54b111bcfaac80627637f764e8894d71f",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "bluetooth": {
+      "prefix_bytes": 10485760,
+      "sha256": "79e1b46efcbff807425f3565b81ded2797d8a5e310ca181e10285d478a5b18a6",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "cpucp": {
+      "prefix_bytes": 446464,
+      "sha256": "058c69c2b58b56e72f0dfe22f4590a1c286e4d78333be261b817f6b741cb19a3",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "cpucp_dtb": {
+      "prefix_bytes": 16384,
+      "sha256": "5ec01dae6c08f008b1c3f66574c74fdc8e8bc1c778dda4e1b994b47abce0be52",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "dcp": {
+      "prefix_bytes": 8388608,
+      "sha256": "1cd300d1b243c6770fae2b79a1b80405f4166375d461dbeaae83bbd74b262351",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "devcfg": {
+      "prefix_bytes": 57344,
+      "sha256": "b3cb7105e8f70ef7ae90bf80f1a0585994fe0804806ddb4f0828d8d4348c5826",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "dsp": {
+      "prefix_bytes": 77594624,
+      "sha256": "b701e7bea6d761445c9c4bb3fe01a16a0c9d9d29528f5a4a6f9d8b4528cd5619",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "engineering_cdt": {
+      "prefix_bytes": 1048576,
+      "sha256": "b307368b26ccc94ced8387d0f5be6f48f916bd809dbeee89186843c90f85cc3f",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "featenabler": {
+      "prefix_bytes": 106496,
+      "sha256": "dbfab8ebea7474bdee94d4246e22e3e51ef3d49fde15c8645194cc93bfa408c9",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "hyp": {
+      "prefix_bytes": 1642496,
+      "sha256": "c241ebb383798ccbee1874d31f6f7fae751b038dcb07823993e7d0e596dca583",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "hyp_ac_config": {
+      "prefix_bytes": 77824,
+      "sha256": "7a22e99f31a42861e928d48e8942ebdc8bcc5033a7243ab50818eaf3b2a05125",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "imagefv": {
+      "prefix_bytes": 114688,
+      "sha256": "295ffc11ab6a9f6f0999ceec44ada50bd208c6c617a73c8a88d333199d931e3a",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "keymaster": {
+      "prefix_bytes": 3354624,
+      "sha256": "b3f65f7f5163919b43da8d92ac00aed8fdca24fc2a5425be7ed5e3a11ff6b4aa",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "modem": {
+      "prefix_bytes": 367001600,
+      "sha256": "76a07c4460cefc389d5b4063245bfa3873bafcf5141ad245ad53080ef626ad9d",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "multiimgoem": {
+      "prefix_bytes": 12288,
+      "sha256": "edf8be094f3fece6184a1c1d2117f6dbbc261e45d974b80d377fc0edcfac370c",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "multiimgqti": {
+      "prefix_bytes": 12288,
+      "sha256": "48a0898336819e52423995c57c11f3402c01413a73bd0ace22998aee1f73eb36",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": true
+    },
+    "oplus_sec": {
+      "prefix_bytes": 1040384,
+      "sha256": "44a936335c49c5cb985f796c501bbe9e42788db30ac7a6269eca648eff3fe4d2",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": true
+    },
+    "pdp": {
+      "prefix_bytes": 356352,
+      "sha256": "557ed59b004ed72cbb1d920a86e6245e405617d4cc19d7a9976bef2f3a4c7a3b",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "pdp_cdb": {
+      "prefix_bytes": 16384,
+      "sha256": "d316c360178a39aa2e429b98fb0c73dcab17496b94113814ad074c164ad9466e",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "pvmfw": {
+      "prefix_bytes": 1011712,
+      "sha256": "4152e7919bd05aa9db2d934095f8deedc9927b7998f84febe05c6da3ddcdd3ea",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "qupfw": {
+      "prefix_bytes": 65536,
+      "sha256": "de0d9cb89c1b3b1e40004672fd3f02a1fee48939d9ef29d2bc97f02ffac7d63d",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "secretkeeper": {
+      "prefix_bytes": 1056768,
+      "sha256": "59338068b039d36ac0cfe93d0aa6413f81a4a281a3d3738ca40a96871ea01e20",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "shrm": {
+      "prefix_bytes": 184320,
+      "sha256": "3b0e8df514afde17a014f45e187ddcf3c8e767b9282973c8ca5422ce8fe95c2b",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "soccp": {
+      "prefix_bytes": 8388608,
+      "sha256": "02ecd298baf0e5e4558672ed26fd83b4d375b963d48fe1f977c9547e7f0e805e",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "soccp_dcd": {
+      "prefix_bytes": 20480,
+      "sha256": "8c0b6c27375c08b051e32384ca143f45fec6d0c4099ed769e5feb7f39bbe324a",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "soccp_debug": {
+      "prefix_bytes": 73728,
+      "sha256": "7ed12c9ff1621620a4b62cc36cb569da36a9a58dbc83afd587dc3575ac5df42e",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "splash": {
+      "prefix_bytes": 3178496,
+      "sha256": "0c246ef19c620ccd7cdc38f683824c081e0bf8016d09add00c91f14082e68922",
+      "matches_500_payload": false,
+      "target17_payload_same_as_500": true
+    },
+    "spuservice": {
+      "prefix_bytes": 94208,
+      "sha256": "f6bbf24e6ba7a3abde6462d885400d2b65d0bde66e74706f71cd2f3076bb3fe9",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": true
+    },
+    "tme_config": {
+      "prefix_bytes": 45056,
+      "sha256": "557d0f31423180ff74f3b4a90329c3b7d38cd7e1a08de9d59182f7b0f264b5be",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "tme_fw": {
+      "prefix_bytes": 204800,
+      "sha256": "be6498c6cb1051e1e94f9f61a38f0a88a7ddf10d7c6274759db3bf0665eca464",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "tme_seq_patch": {
+      "prefix_bytes": 8192,
+      "sha256": "35d85544a793890932c877a5da14c63a6a539223c9929e00055318fe03063b9b",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": true
+    },
+    "tz": {
+      "prefix_bytes": 4149248,
+      "sha256": "58f94eafd2f05f6938852ad280a14da80ed9fe93e35c240d1ca80d5c10850d7a",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "tz_ac_config": {
+      "prefix_bytes": 61440,
+      "sha256": "cc3c7f9031f690b54dbb5f646ae25545976dd1dbd61f76dab8b847f0c549d3b3",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "tz_qti_config": {
+      "prefix_bytes": 122880,
+      "sha256": "5b225f2082d8c515d49ab3a12b6f4c32c34044ab29a92b0d00c09715c09da34f",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "uefi": {
+      "prefix_bytes": 2793472,
+      "sha256": "116974f3b73503b191b7c6419f6658a9392b66a11fe104757384cf6a98e78561",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "uefisecapp": {
+      "prefix_bytes": 208896,
+      "sha256": "41ed3282ff1482c41dbdbb86183930b2a3b7d38c4451109b4946f514e4ded12b",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "xbl": {
+      "prefix_bytes": 1163264,
+      "sha256": "5547be3977e8523ba8a014c6d0a0f639dcdef2928207a39ee83267029d4b0d23",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "xbl_ac_config": {
+      "prefix_bytes": 45056,
+      "sha256": "38370d7b458c28587dfd5ea8cdedb8c8e57fbb18c0f5fcaa300c53f96171805d",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "xbl_config": {
+      "prefix_bytes": 385024,
+      "sha256": "4794f59bc7c82b7d9aab518225c5af797dc51b76a27cf991cc590e4a6a73936b",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    },
+    "xbl_ramdump": {
+      "prefix_bytes": 880640,
+      "sha256": "7e8b34e01227c0f559c7af705777859410e540c3bdd62b2a580da2753ec6fdbc",
+      "matches_500_payload": true,
+      "target17_payload_same_as_500": false
+    }
+  },
+  "target_topology": {
+    "init_boot": {
+      "bytes": 8388608,
+      "sha256": "0bf943b21d3009873339cd8a8f6db623c1d6598fa6a27654dcf3ff959404d444",
+      "path": "/dev/block/by-name/init_boot_a",
+      "device": "/dev/block/sde30",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/partitions/locked-20261012_120915/init_boot_a.img",
+      "existing_backup_verified": true
+    },
+    "abl": {
+      "bytes": 1048576,
+      "sha256": "7021eaf3f1ea54168a4a1755e7716363d8c42d947e0a8fe8d5b2cf18d91d142c",
+      "path": "/dev/block/by-name/abl_a",
+      "device": "/dev/block/sde8",
+      "same_as_latest_record": true,
+      "existing_backup": "root-work/partitions/locked-20261012_120915/abl_a.img",
+      "existing_backup_verified": true
+    }
+  },
+  "target_images": {
+    "boot": {
+      "bytes": 100663296,
+      "sha256": "2faacb0b20e07a4ce73cbbf9f7680aab17f0f7ea9519cb471fe0232eb3f9a388"
+    },
+    "init_boot": {
+      "bytes": 8388608,
+      "sha256": "202332d30498b52967da93e1272a871161ec04e4e5825c7b541cddcce9a64516"
+    },
+    "vendor_boot": {
+      "bytes": 100663296,
+      "sha256": "018f540f077db97ad9563e830719a53732bd31aafacea5ed784c5c78a15d6034"
+    },
+    "dtbo": {
+      "bytes": 25165824,
+      "sha256": "6a7914b1eaa818dedeeb7da3b982a8e61794b2f1943101a63ebae06b2b7378e4"
+    },
+    "vbmeta": {
+      "bytes": 12288,
+      "sha256": "26f56b4ed8c62c3844ced5a96b45b114749e4495c0a3d2940b440604f7ebdb48"
+    },
+    "xbl": {
+      "bytes": 1163264,
+      "sha256": "f7bdf82e9fe617ab7ec30cfd042c8b242b6700bee404c4899b0ff5a666fa997b"
+    },
+    "xbl_config": {
+      "bytes": 389120,
+      "sha256": "e3676564849ad9e63ba7d5f406e7fc02b7c600be4bde4e1857e06975a3e85680"
+    },
+    "engineering_cdt": {
+      "bytes": 1048576,
+      "sha256": "6c5c7cf69c734c4dd98672b141e5697609225b13975a868e1367793c397f77d1"
+    },
+    "uefi": {
+      "bytes": 2793472,
+      "sha256": "a8f69bb231e94ccb0b5c5f13da32b97f186cda69dd0ecd3f2ca71a2c1acc8c93"
+    },
+    "aop": {
+      "bytes": 356352,
+      "sha256": "825e9765dfba2ae53fe4b99645495da8dd8b5b8eb1665e12bd9343b611006128"
+    },
+    "aop_config": {
+      "bytes": 28672,
+      "sha256": "ba2c63fe0acd742480a979202d68f661b76c76a2d084f2a410687678a1ccdb62"
+    },
+    "tz": {
+      "bytes": 4149248,
+      "sha256": "f2c4db8c9f060d925d1208e52dac4738efb8c21098467ab1f6d4612695b949cf"
+    },
+    "hyp": {
+      "bytes": 1642496,
+      "sha256": "1336692cdafef62ba1928fcc5a7d994a4c2eff7470df4e2aad3e4eb731c4b1c0"
+    },
+    "modem": {
+      "bytes": 367001600,
+      "sha256": "232f862a758aa028f526f6972265ef2fb43647e34634c487bd551e6208165679"
+    },
+    "bluetooth": {
+      "bytes": 10485760,
+      "sha256": "0744683bef6378ea737957f534859d4ceeb2cf4fe9a0a4c86e34f7b80a26cd46"
+    },
+    "abl": {
+      "bytes": 278528,
+      "sha256": "a62e30bf3ca6c4d0ffdb35e46d8003b3dcd5964946a7a01474ef18c262060d1a"
+    },
+    "dsp": {
+      "bytes": 77594624,
+      "sha256": "8dcba5d8c68cb152113ab43c166ca2bddb52b229b91a2fbd53b997fea03cbf7b"
+    },
+    "keymaster": {
+      "bytes": 3354624,
+      "sha256": "4ae025ade919db212a1290884d9365e4c0bfb78b9ef1d8dce9279f8bdfac45f7"
+    },
+    "spuservice": {
+      "bytes": 94208,
+      "sha256": "f6bbf24e6ba7a3abde6462d885400d2b65d0bde66e74706f71cd2f3076bb3fe9"
+    },
+    "devcfg": {
+      "bytes": 57344,
+      "sha256": "643d59c4f6dec6c1f55e41bcb9ea63e1e8029b624c19cc1cddd92e6acc556f57"
+    },
+    "qupfw": {
+      "bytes": 65536,
+      "sha256": "52aaa160d709de8eca492a76bc70f17451f8930d96c08779fde561a4267d54fa"
+    },
+    "uefisecapp": {
+      "bytes": 208896,
+      "sha256": "db6a89fe6c50ed8bb9d3aabc2ea5b000b782c4d84439a4f0a75f5d5cb7e3ca89"
+    },
+    "imagefv": {
+      "bytes": 114688,
+      "sha256": "8038f9e6cf389b7ffc9552c28c7536114a23a129319e44a9550b250fd612ab86"
+    },
+    "shrm": {
+      "bytes": 184320,
+      "sha256": "80cb41afe44ff2ed44c97b50c6abf1c9f5fe8302dd03b1c764dd4735edcf7c0a"
+    },
+    "cpucp": {
+      "bytes": 446464,
+      "sha256": "70531068dfbaed9bd098363061e64c3b8ed8589396e578277b535db87476c842"
+    },
+    "featenabler": {
+      "bytes": 106496,
+      "sha256": "da9a112500831986636f3e952697441f8be1bf14928e49107c1dc947d3e89166"
+    },
+    "oplus_sec": {
+      "bytes": 1040384,
+      "sha256": "44a936335c49c5cb985f796c501bbe9e42788db30ac7a6269eca648eff3fe4d2"
+    },
+    "splash": {
+      "bytes": 3178496,
+      "sha256": "a6bf77a7056342b912ce7e6333097e896c9cf92677df1ec1976749760f43905d"
+    },
+    "xbl_ramdump": {
+      "bytes": 884736,
+      "sha256": "106f61e778c84ad86a49b021d821f146736f43dba647cbadf2bca06909e572bc"
+    },
+    "cpucp_dtb": {
+      "bytes": 16384,
+      "sha256": "db90a506470790f56a388e8aea496666d2db76bd68c750ba1bebe72ada15e458"
+    },
+    "soccp_debug": {
+      "bytes": 73728,
+      "sha256": "8d19ceb0f4a8070e03de4a1ba9395f791f0c05d5df0812d45f4e4264e7673f93"
+    },
+    "soccp_dcd": {
+      "bytes": 20480,
+      "sha256": "3c6ef50c1c0e54665139ed391e8442cefd809aaa4907057c1b8939d6f03162e0"
+    },
+    "pdp": {
+      "bytes": 356352,
+      "sha256": "2befd1ab332801750f2642ca1a677e2b50b8d95f7bb591b6ed6e0a31786e2393"
+    },
+    "pdp_cdb": {
+      "bytes": 16384,
+      "sha256": "714895507b77188c0d4c4c1f4d939e83df05cb4674559a796399d40bd338ef7d"
+    },
+    "tme_seq_patch": {
+      "bytes": 8192,
+      "sha256": "35d85544a793890932c877a5da14c63a6a539223c9929e00055318fe03063b9b"
+    },
+    "hyp_ac_config": {
+      "bytes": 77824,
+      "sha256": "2710f20f2c6a56ed0b7574ce93b593d921c5784052304fbeb5324f86e97c32db"
+    },
+    "multiimgoem": {
+      "bytes": 12288,
+      "sha256": "28033de768e15e1e7570c2879f3dcd946a53e2bc222e04cd53203306f702a2f1"
+    },
+    "tme_fw": {
+      "bytes": 204800,
+      "sha256": "c8be16cda4f65e6af241c221f20401d942da36a2cd4abddac5ca314d0cfc141f"
+    },
+    "soccp": {
+      "bytes": 8388608,
+      "sha256": "22acea496ffe90880dd70a9a33fdd399ffa55cc98dbb44b3731d0b9772151128"
+    },
+    "multiimgqti": {
+      "bytes": 12288,
+      "sha256": "48a0898336819e52423995c57c11f3402c01413a73bd0ace22998aee1f73eb36"
+    },
+    "tme_config": {
+      "bytes": 45056,
+      "sha256": "96d1e0c5819a8e03202a9a8d797d6d8ace531f39e582d0bc6884550800027228"
+    },
+    "xbl_ac_config": {
+      "bytes": 45056,
+      "sha256": "eb4b14438ebef91405ff8420b5bde5fe5b0672c29cb47652927197721514230c"
+    },
+    "secretkeeper": {
+      "bytes": 1056768,
+      "sha256": "81a96cc649e5b158c5d8a8d09684716c15475fb322cb09122eb6900372100aec"
+    },
+    "tz_ac_config": {
+      "bytes": 61440,
+      "sha256": "88152a6c87423ae48222efb467defe514174dd0d33188b8394c296cf008ef9d5"
+    },
+    "tz_qti_config": {
+      "bytes": 122880,
+      "sha256": "297dd39f3cbeb01809ff9d49f9341b9007e18b5d59c6902651eec6d7afc79b79"
+    },
+    "dcp": {
+      "bytes": 8388608,
+      "sha256": "119a69fdbdee0351fd8f75bbf6c2f633b9684c08cd235da2eee57a2752e1ba0a"
+    },
+    "pvmfw": {
+      "bytes": 901120,
+      "sha256": "55aa1236a8dddda2fbeb3dab6cbccab9c79efc9920a03484c2fab936294828d2"
+    }
+  },
+  "assets": {
+    "patched": {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/candidates-offline/KSU-3.3.1-init_boot-17.img",
+      "bytes": 8388608,
+      "sha256": "ddd0e19a562a33040f99282e23db848b4371d66b88581952843be33bfd516fc3"
+    },
+    "normal": {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/candidates-offline/ABL_normal-17.efi",
+      "bytes": 782336,
+      "sha256": "2efe7efced64c4caaea203277245e16ff0523e800a82ff87cc44642f8b3f4170"
+    },
+    "old_abl": {
+      "path": "root-work/coolapk-original/oppo_pad_mini_root_file/abl_a.img",
+      "bytes": 1048576,
+      "sha256": "0210487cbc59bdcdb03bb2ee61d9d80fffad8f2ccf35bc7d28d7d9569ad59802"
+    },
+    "source_normal": {
+      "path": "root-work/ota-diagnostics/pre17-live-20261014_101632/efi-readonly-backup/ABL_normal.efi",
+      "bytes": 774144,
+      "sha256": "6fa5baed02ca05743491afe32e30470f1ec1afb0cca94fe1cd6dbd560242e503"
+    },
+    "source_entries": {
+      "path": "root-work/ota-diagnostics/pre17-live-20261014_101632/efi-readonly-backup/BOOTENTRIES",
+      "bytes": 56,
+      "sha256": "055b05099826d062e6bec3cfe0e8f1511d910ea407e35666516d51db7a27db70"
+    },
+    "entries": {
+      "path": "root-work/ColorOS17-17.0.0.103-analysis/preparation-20261014_101454/BOOTENTRIES-17.txt",
+      "bytes": 126,
+      "sha256": "e6723993a947e43e87c3f10ee2c067561c43a4be2e8eca24b6199828abd853c3"
+    }
+  }
+}

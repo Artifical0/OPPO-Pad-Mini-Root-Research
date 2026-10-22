@@ -1,0 +1,46 @@
+{
+  "decision": "103_A_BOOT_AND_KSU_VERIFIED",
+  "device_read_only": true,
+  "state": {
+    "ro.product.model": "OPD2515",
+    "ro.build.display.id": "OPD2515_17.0.0.103(CN01)",
+    "ro.boot.slot_suffix": "_a",
+    "uid": "0",
+    "ksu": "ksud 3.3.1 (uapi: 5)",
+    "kernel": "6.12.69-android16-6-g242e1a07f878-ab15865446-4k",
+    "bootconfig": "androidboot.verifiedbootstate = \"orange\"\nandroidboot.vbmeta.device_state = \"unlocked\"\nandroidboot.slot_suffix = \"_a\"",
+    "lkm_live": true,
+    "current": 0,
+    "next": 0,
+    "slots": 2,
+    "merge": 0,
+    "next_bootable": true,
+    "engine": "UPDATE_STATUS_IDLE",
+    "enabled_modules": "",
+    "queued_modules": ""
+  },
+  "basic": {
+    "ro.product.model": "OPD2515",
+    "ro.build.display.id": "OPD2515_17.0.0.103(CN01)",
+    "ro.build.version.release": "17",
+    "ro.build.version.sdk": "37",
+    "ro.boot.slot_suffix": "_a",
+    "sys.boot_completed": "1"
+  },
+  "hashes": {
+    "init_boot_a": "ddd0e19a562a33040f99282e23db848b4371d66b88581952843be33bfd516fc3",
+    "abl_a": "0210487cbc59bdcdb03bb2ee61d9d80fffad8f2ccf35bc7d28d7d9569ad59802",
+    "boot_a": "2faacb0b20e07a4ce73cbbf9f7680aab17f0f7ea9519cb471fe0232eb3f9a388",
+    "xbl_a_payload_prefix": "f7bdf82e9fe617ab7ec30cfd042c8b242b6700bee404c4899b0ff5a666fa997b",
+    "xbl_config_a_payload_prefix": "e3676564849ad9e63ba7d5f406e7fc02b7c600be4bde4e1857e06975a3e85680"
+  },
+  "selinux": "Enforcing",
+  "uptime": "50.16 175.83",
+  "ce_available": "true",
+  "third_party_modules_paused": true,
+  "boot_a_successful": true,
+  "boot_a_bootable": true,
+  "second_reboot_verified": true,
+  "application_data_verified_by_user": true,
+  "application_data_verification_source": "User reported photos, files and usual apps normal after first boot"
+}

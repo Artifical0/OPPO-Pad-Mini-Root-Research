@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-12T15:40:20",
+  "normal_reboot_without_cve": true,
+  "checks": {
+    "uid0_after_normal_reboot": true,
+    "lkm_live": true,
+    "init_boot_b_readback_matches": true,
+    "stock_boot_unchanged": true,
+    "selinux_enforcing": true,
+    "stock_kernel_preserved": true,
+    "firmware_500": true
+  },
+  "passed": true,
+  "output": "OPD2515\r\nOPD2515_16.0.10.500(CN01)\r\n6.12.58-android16-6-g7704a1ae279b-ab15213644-4k\r\n_b\r\n0\r\norange\r\nEnforcing\r\nuid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0\r\nkernelsu 217088 0 - Live 0x0000000000000000 (O)\r\nd30bb67358aee1a5ef3b2ba88aeb68220d14f8e68c67e9a0cb5019fce845b75a  /dev/block/by-name/init_boot_b\r\n5fd79d25971d171eb18740d37a6fcda56a289bcc4470c642964c988c8b025e72  /dev/block/by-name/boot_b\r\nksud 3.3.0 (uapi: 2)\r\n"
+}

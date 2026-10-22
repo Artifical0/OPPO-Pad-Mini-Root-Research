@@ -1,0 +1,79 @@
+[
+  {
+    "path": "root-work/tools/ksud-x86_64-pc-windows-gnu.exe",
+    "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/ksud-x86_64-pc-windows-gnu.exe",
+    "version": "v3.3.0",
+    "sha256": "f9880fbbb3751d847dd1fbe3ea5939f592c28887ff274cd5ddb090ed6c751ee0",
+    "bytes": 6635087
+  },
+  {
+    "path": "root-work/tools/ksuinit-aarch64",
+    "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/ksuinit-aarch64",
+    "version": "v3.3.0",
+    "sha256": "b49fff3252cdcd14bf80472becbd96c4f17028a632b364e8d455d335b94f1345",
+    "bytes": 607360
+  },
+  {
+    "path": "root-work/tools/lkm-aarch64-android16-6.12_kernelsu.ko",
+    "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/lkm-aarch64-android16-6.12_kernelsu.ko",
+    "version": "v3.3.0",
+    "sha256": "877286f81d500c4ec546c96e9718c186b7379573c97ba5d5a35dd9a91465d076",
+    "bytes": 386624
+  },
+  {
+    "path": "root-work/tools/KernelSU-v3.3.0.apk",
+    "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/KernelSU_v3.3.0_32601-release.apk",
+    "version": "v3.3.0",
+    "sha256": "c197060ecb89702e7d54a4c95e29cf5e8d97369bbbb436979ab7fd6bcde7b077",
+    "bytes": 10777987
+  },
+  {
+    "path": "sources/KernelSU-v3.3.0-932014ab5b2c.zip",
+    "url": "https://codeload.github.com/tiann/KernelSU/zip/932014ab5b2c9b74a3d11e2ec4d17dd10fc9442e",
+    "commit": "932014ab5b2c9b74a3d11e2ec4d17dd10fc9442e",
+    "sha256": "981145c0ac13de5084b415a3ca6e12d3b5235df9fcc667c0d17aec7ac3691e0b",
+    "bytes": 3517816
+  },
+  {
+    "path": "root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/ksud-x86_64-pc-windows-gnu.exe",
+    "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/ksud-x86_64-pc-windows-gnu.exe",
+    "version": "v3.3.1",
+    "sha256": "c259b0111a4fc6ab21f0f1a6d56b66cf87b377e3f87325340c8221fff904b88f",
+    "bytes": 8043904
+  },
+  {
+    "path": "root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/ksuinit-aarch64",
+    "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/ksuinit-aarch64",
+    "version": "v3.3.1",
+    "sha256": "365c66e5435a9ecdb3dbb23ceda2d9253568defeee3682af95220087094eff5d",
+    "bytes": 603008
+  },
+  {
+    "path": "root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/lkm-aarch64-android16-6.12_kernelsu.ko",
+    "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/lkm-aarch64-android16-6.12_kernelsu.ko",
+    "version": "v3.3.1",
+    "sha256": "7e25d68419d08535d35e3630d9f0ff1a08e97a7026d36e878991eecb13554d9f",
+    "bytes": 404928
+  },
+  {
+    "path": "root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/KernelSU_v3.3.1_32680-release.apk",
+    "url": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/KernelSU_v3.3.1_32680-release.apk",
+    "version": "v3.3.1",
+    "sha256": "b4a059ace71de2fa65cc7f12b1c58d55fc23ab25e057ee4230ce779742abe450",
+    "bytes": 13637206
+  },
+  {
+    "path": "sources/KernelSU-v3.3.1-0c0fdb960178.zip",
+    "url": "https://codeload.github.com/tiann/KernelSU/zip/0c0fdb960178fa12d80d6cbcfdcb6ad8be6a865d",
+    "commit": "0c0fdb960178fa12d80d6cbcfdcb6ad8be6a865d",
+    "sha256": "9cd883dd90f2dc00a9605d43ec082a8f16690481a4b8739384f470e6962fd896",
+    "bytes": 4540489
+  },
+  {
+    "path": "sources/x9u-preload-builder-18808341a788.zip",
+    "url": "https://codeload.github.com/koaaN/x9u-preload-builder/zip/18808341a788c2ccb5fb3f071d37d6009c959199",
+    "commit": "18808341a788c2ccb5fb3f071d37d6009c959199",
+    "sha256": "e368956e329414f7eff569adb3e62c81e594d53c4f083bcaedde91b5980ed6f9",
+    "bytes": 67646
+  }
+]

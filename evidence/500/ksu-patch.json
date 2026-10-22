@@ -1,0 +1,39 @@
+{
+  "root_method": "KernelSU LKM",
+  "kernelsu_version": "v3.3.0",
+  "kmi_selector": "android16-6.12",
+  "architecture": "aarch64",
+  "target_partition_base": "init_boot",
+  "source_image": "<WORKSPACE>\\root-work\\partitions\\locked-20261012_120915\\init_boot_b.img",
+  "source_sha256": "4a7e06fa940b83657b26f5d4a8a3a3f83cec3f906d0c416e85282ca4993d4b9f",
+  "source_header": {
+    "ramdisk_size": 3120929,
+    "kernel_size": 0,
+    "bytes": 8388608,
+    "header_version": 4
+  },
+  "patched_image": "<WORKSPACE>\\root-work\\patched\\KernelSU-v3.3.0-slot-b-20261012_145008\\kernelsu_patched-init_boot.img",
+  "patched_sha256": "d30bb67358aee1a5ef3b2ba88aeb68220d14f8e68c67e9a0cb5019fce845b75a",
+  "patched_header": {
+    "ramdisk_size": 3611598,
+    "kernel_size": 0,
+    "bytes": 8388608,
+    "header_version": 4
+  },
+  "assets": [
+    {
+      "Name": "ksud-x86_64-pc-windows-gnu.exe",
+      "SHA": "f9880fbbb3751d847dd1fbe3ea5939f592c28887ff274cd5ddb090ed6c751ee0"
+    },
+    {
+      "Name": "lkm-aarch64-android16-6.12_kernelsu.ko",
+      "SHA": "877286f81d500c4ec546c96e9718c186b7379573c97ba5d5a35dd9a91465d076"
+    },
+    {
+      "Name": "ksuinit-aarch64",
+      "SHA": "b49fff3252cdcd14bf80472becbd96c4f17028a632b364e8d455d335b94f1345"
+    }
+  ],
+  "device_written": false,
+  "created": "2026-10-12T14:50:09+08:00"
+}
