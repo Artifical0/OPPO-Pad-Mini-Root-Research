@@ -34,4 +34,6 @@ python -m unittest discover -s OPD2515-OTA-Helper/tests -p "test_compare.py" -v
 
 脱敏结果在 [evidence/](evidence/README.md)。不发布 userdata、persist 整分区、聊天/应用备份、keybox、私钥、账号凭据、完整 bugreport 或设备序列号。两份完整固件合计约 18 GB，不在发布包内；保留[固件指纹](docs/firmware.md)，由研究者自行取得相同完整包。
 
+后续更新和新发布的材料会推送到 Telegram 频道 [@ByteJuno](https://t.me/ByteJuno)，欢迎关注。
+
 原始研究工具代码采用 GPL-3.0-or-later，见 [LICENSE](LICENSE)。上游源码和第三方二进制保留其原有权利与许可，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)；不能将这里的 GPL 声明理解为 OPPO 固件或全部第三方文件的重新授权。
