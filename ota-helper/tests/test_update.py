@@ -145,6 +145,7 @@ class UpdateTests(unittest.TestCase):
         self.assertEqual(one.read_bytes(), two.read_bytes())
         self.assertFalse(manifest["real_device_installed"])
         with zipfile.ZipFile(one) as archive:
+            self.assertEqual(archive.namelist(), sorted(archive.namelist()))
             self.assertTrue(all(not n.endswith((".img", ".efi", ".exe")) for n in archive.namelist()))
             self.assertIn("bin/guards.sh", archive.namelist())
 

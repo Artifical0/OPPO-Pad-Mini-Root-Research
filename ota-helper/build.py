@@ -13,7 +13,9 @@ def build(out):
     packet = out / f"OPD2515-OTA-Helper-{VERSION}.zip"
     manifest = {"version": VERSION, "real_device_installed": False, "real_ota_tested": False, "files": {}}
     with zipfile.ZipFile(packet, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
-        for path in sorted((ROOT / "module").rglob("*")):
+        # Path ordering is case-insensitive on Windows; sort POSIX strings so
+        # LICENSE and lowercase names have the same order on every platform.
+        for path in sorted((ROOT / "module").rglob("*"), key=lambda p: p.relative_to(ROOT / "module").as_posix()):
             if not path.is_file():
                 continue
             name = path.relative_to(ROOT / "module").as_posix()
