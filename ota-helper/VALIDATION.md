@@ -16,4 +16,4 @@
 
 2026-10-23 本地结果：46 项历史 Python 测试和 10 项新版 Python 测试全部通过，两套 WebUI mock 通过；Linux BusyBox 1.37 的完整 39 项模拟固件事务、状态门槛和回退通过。500、103 两个完整包的整包签名、CRC 与固定证书校验通过，38 项发布材料摘要通过。
 
-持续验证：[GitHub Actions](https://github.com/Artifical0/OPPO-Pad-Mini-Root-Research/actions/workflows/offline-checks.yml)。安装及更新的实际设备集成仍需单独验证。
+持续验证：[GitHub Actions](https://github.com/ByteJuno/OPPO-Pad-Mini-Root-Research/actions/workflows/offline-checks.yml)。安装及更新的实际设备集成仍需单独验证。

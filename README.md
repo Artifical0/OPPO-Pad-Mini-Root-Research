@@ -15,18 +15,18 @@
 在 Windows 安装 [Python 3.11+](https://www.python.org/downloads/) 和 [ADB / Fastboot](https://developer.android.com/tools/releases/platform-tools)，下载或克隆本仓库，在仓库根目录打开 PowerShell：
 
 ```powershell
-git clone https://github.com/Artifical0/OPPO-Pad-Mini-Root-Research.git
+git clone https://github.com/ByteJuno/OPPO-Pad-Mini-Root-Research.git
 cd OPPO-Pad-Mini-Root-Research
 python -m pip install -r requirements.txt
 python tools/fetch_materials.py
 python tools/verify_materials.py .
 ```
 
-`fetch_materials.py` 下载固定版本的研究材料，并校验压缩包摘要；最后一条命令逐项核对材料。它们只操作电脑文件。也可从 [材料 Release](https://github.com/Artifical0/OPPO-Pad-Mini-Root-Research/releases/tag/research-2026-10-22-r1) 手动下载、校验并解压到仓库根目录。
+`fetch_materials.py` 下载固定版本的研究材料，并校验压缩包摘要；最后一条命令逐项核对材料。它们只操作电脑文件。也可从 [材料 Release](https://github.com/ByteJuno/OPPO-Pad-Mini-Root-Research/releases/tag/research-2026-10-22-r1) 手动下载、校验并解压到仓库根目录。
 
 - [工具索引](docs/tools.md)：每个文件的用途与完整路径。
 - [固件指纹](docs/firmware.md)：500 / 103 完整包的长度、SHA256 和检查工具。完整 ROM 需自行获取。
-- [OTA 助手预览版](https://github.com/Artifical0/OPPO-Pad-Mini-Root-Research/releases/tag/ota-helper-v0.2.0-rc1)：模块下载、源码和构建摘要；不能保证所有未来更新保留 root。
+- [OTA 助手预览版](https://github.com/ByteJuno/OPPO-Pad-Mini-Root-Research/releases/tag/ota-helper-v0.2.0-rc1)：模块下载、源码和构建摘要；不能保证所有未来更新保留 root。
 - [验证记录](evidence/README.md)：脱敏的 root、系统启动与重启结果。
 
 ## 后续更新的工作方式

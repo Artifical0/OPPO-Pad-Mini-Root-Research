@@ -2,5 +2,5 @@ id=opd2515_ota_helper
 name=OPD2515 OTA Helper (Research Preview)
 version=0.2.0-rc1
 versionCode=20001
-author=Artifical0
+author=ByteJuno
 description=OPD2515 GBL + KernelSU OTA assistant. Per-update PC review required; full OTA only. Not yet device-tested.

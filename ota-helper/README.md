@@ -4,7 +4,7 @@
 
 这是为后续更新准备的 **KernelSU 模块研究预览版**：升级前导出启动备份，电脑审查官方完整包，重启前手动保留目标槽的 KSU 与 GBL。已经实现离线构建、校验和模拟分区事务测试，**尚未在平板安装，也没有下一版 OTA 的真机验证**。
 
-下载：[0.2.0-rc1 Release](https://github.com/Artifical0/OPPO-Pad-Mini-Root-Research/releases/tag/ota-helper-v0.2.0-rc1)。同页提供 `SHA256SUMS.txt` 和构建清单。旧 `OPD2515-OTA-Helper/` 目录保留历史解析器和专用 103 工具；新版模块源码在本目录 `module/`。
+下载：[0.2.0-rc1 Release](https://github.com/ByteJuno/OPPO-Pad-Mini-Root-Research/releases/tag/ota-helper-v0.2.0-rc1)。同页提供 `SHA256SUMS.txt` 和构建清单。旧 `OPD2515-OTA-Helper/` 目录保留历史解析器和专用 103 工具；新版模块源码在本目录 `module/`。
 
 ## 能支持哪些更新
 
