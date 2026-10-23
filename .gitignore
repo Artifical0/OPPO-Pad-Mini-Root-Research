@@ -15,3 +15,6 @@ extracted_images/
 *.tar
 *.der
 OPD2515-OTA-Helper/dist/
+ota-helper/dist/
+ota-helper/test-output/
+update-output*/

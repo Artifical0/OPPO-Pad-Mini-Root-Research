@@ -1,57 +1,82 @@
 # 工具与材料索引
 
-Release 材料包保留与研究脚本一致的目录结构，解压到仓库根目录。所有二进制的实际大小、SHA256、来源和用途见 [materials-manifest.json](../materials-manifest.json)。`python tools/verify_materials.py .` 逐项复核；下载或解压不会自动运行载荷、安装驱动或写平板。
+[返回首页](../README.md) · [500 Root](500-root.md) · [500 → 103](17-103-upgrade.md) · [后续 OTA 助手](../ota-helper/README.md)
 
-| 工具/材料 | 对应版本/用途 | 发布位置 |
-|---|---|---|
-| 本机编译 preload.so | 固定 500 输入的临时提权产物，存在 panic/检测重启历史 | Release：`root-work/preload-release/` |
-| x9u-preload-builder 源码 | `18808341a788c2ccb5fb3f071d37d6009c959199`，用于重新生成 target.h 和 SO | Release：`sources/`，另见上游固定链接 |
-| BDS、BLTools、RebootTools、原工具菜单 | 首次 GBL 入口和真实解锁；ArbTools 为原子菜单随附文件，本次未使用 | Release：`root-work/gbl/deploy-original-20261012_144259/payload/` |
-| 旧签名 ABL | 1 MiB 的 GBL 入口分区镜像 | Release：`root-work/coolapk-original/oppo_pad_mini_root_file/abl_a.img` |
-| 500 / 103 Normal EFI | 分别由各自原厂 ABL 生成，不能互换或直接当完整 ABL 刷写 | Release：`root-work/gbl/compatibility-.../current_b/`、`root-work/ColorOS17-17.0.0.103-analysis/candidates-offline/` |
-| KernelSU 3.3.0 / 3.3.1 | 官方 ksud Windows、ksuinit、android16-6.12 LKM 与管理器 | Release：`root-work/tools/`、`root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/` |
-| 500 / 103 KSU init_boot | 本机实际使用的特定镜像与原厂输入，不是跨版本通用包 | Release：对应 `patched/`、`candidates-offline/`、`images-17/` |
-| extractfv / patch_abl Windows | 提取 LinuxLoader 并生成 Normal EFI | Release：`root-work/gbl-source/submodules/*/build/`，固定源码快照在 `sources/` |
-| ADB/Fastboot、Google USB Driver | USB 通信和明确设备实例的驱动绑定 | 从 [Android 官方](https://developer.android.com/tools/releases/platform-tools)及[Google USB Driver](https://developer.android.com/studio/run/win-usb)获取，未重打包 SDK |
-| NDK r27c / GNU Make 4.4.1 | 编译匹配固件的 preload，不是执行 root 所需驻留软件 | 从官方工具链和 MSYS2 获取，未打包整个 SDK |
-| Python 3.11+、cryptography、Node.js、Bash | 离线解析、校验与测试 | `requirements.txt`；测试 shell 推荐 Git Bash |
-| OTA 检查/提取/事务源码 | 本次自建工具与历史 RC2 | 仓库 `OPD2515-OTA-Helper/` |
-| 驱动绑定辅助脚本 | `VID_18D1&PID_D00D`，签名检查、限定实例 | 仓库 `tools/Bind-Fastboot-Driver.ps1` |
-
-## 离线研究
+先在仓库根目录运行下面三条命令。所有材料保留原来的目录结构，方便按表查找：
 
 ```powershell
 python -m pip install -r requirements.txt
+python tools/fetch_materials.py
 python tools/verify_materials.py .
-python OPD2515-OTA-Helper/tools/inspect_payload.py --help
-python OPD2515-OTA-Helper/tools/compare_payloads.py --help
-python OPD2515-OTA-Helper/tools/extract_selected_payload.py --help
-python -m unittest discover -s OPD2515-OTA-Helper/tests -p "test_*.py" -v
-node OPD2515-OTA-Helper/tests/test_webui.mjs
 ```
 
-部分旧 `review.py` 参数仍提供原 Windows 工具链位置作为默认值，移植时用其 `--git`、`--mingw-bin`、`--tool-temp-root` 等显式参数；它们不是必须使用的盘符。构建 RC2 还要求固定 GBL 工具和 KSU 3.3.0，不能把它打包成功视为已适用于 103。
+下载与校验仅操作电脑文件。全部 38 个材料的大小、SHA256 和来源见 [materials-manifest.json](../materials-manifest.json)。完整 ROM 另见[固件指纹](firmware.md)。
 
-## 设备工具的运行边界
+## 按用途找文件
 
-`guarded_17.py check` 是读取平板；`apply` 会写目标 init_boot、ABL 和共享 persist 中的 EFI/菜单，并使用原有备份与回读保护。`activate_deferred_17.py` 会通过系统 UpdateEngine 激活已认证待启动槽并暂停更新 UI，它不是普通只读工具。二者不应与离线测试混淆。
+| 用途 | 材料 | 仓库根目录下的完整路径 |
+|---|---|---|
+| 500 临时 root | 本机编译的 preload | `root-work/preload-release/preload.so` |
+| GBL 入口 | 旧签名完整 ABL | `root-work/coolapk-original/oppo_pad_mini_root_file/abl_a.img` |
+| GBL 菜单 | BDS | `root-work/gbl/deploy-original-20261012_144259/payload/BDS.efi` |
+| GBL 工具 | BLTools / RebootTools / ENTRIES | `root-work/gbl/deploy-original-20261012_144259/payload/efisp/tools/` |
+| 500 系统启动 | 500 Normal EFI | `root-work/gbl/compatibility-20261012_122445/current_b/ABL_normal.efi` |
+| 500 首次 KSU | 3.3.0 的 ksud、ksuinit、LKM、管理器 | `root-work/tools/` |
+| 500 KSU 修补输入 | 原厂 init_boot | `root-work/partitions/locked-20261012_120915/init_boot_b.img` |
+| 500 已验证 KSU | 3.3.0 修补镜像 | `root-work/patched/KernelSU-v3.3.0-slot-b-20261012_145008/kernelsu_patched-init_boot.img` |
+| 103 系统启动 | 103 Normal EFI | `root-work/ColorOS17-17.0.0.103-analysis/candidates-offline/ABL_normal-17.efi` |
+| 103 KSU 修补输入 | 原厂 init_boot | `root-work/ColorOS17-17.0.0.103-analysis/images-17/init_boot.img` |
+| 103 已验证 KSU | 3.3.1 修补镜像 | `root-work/ColorOS17-17.0.0.103-analysis/candidates-offline/KSU-3.3.1-init_boot-17.img` |
+| KSU 3.3.1 | ksud、ksuinit、LKM、管理器 | `root-work/ColorOS17-17.0.0.103-analysis/ksu-3.3.1-tools/` |
+| 提取 EFI | extractfv.exe | `root-work/gbl-source/submodules/ablfvextractor/build/extractfv.exe` |
+| 生成 Normal EFI | patch_abl.exe | `root-work/gbl-source/submodules/patcher/build/patch_abl.exe` |
+| 研究源码 | GBL / KernelSU / preload 固定源码快照 | `sources/` |
+| 后续 OTA | 0.2.0-rc1 模块源码、构建和保留包生成器 | `ota-helper/` |
 
-公开源码保留本次 b → a 的严格检查，并要求显式设备参数：
+旧 ABL 用于完整 abl 分区，Normal EFI 用于 persist 中的文件；两者不能混用。文件名中的 a / b 是历史采集时的槽位，不指定读者的刷写目标。随 GBL 工具附带的 ArbTools 不在本指南使用步骤中。
+
+## 电脑端离线工具
+
+| 操作 | 命令入口 | 设备访问 |
+|---|---|---|
+| 下载固定材料 | `python tools/fetch_materials.py` | 无 |
+| 校验 38 个文件 | `python tools/verify_materials.py .` | 无 |
+| 查看 payload 分区和操作类型 | `python OPD2515-OTA-Helper/tools/inspect_payload.py --help` | 无 |
+| 比较两个 payload | `python OPD2515-OTA-Helper/tools/compare_payloads.py --help` | 无 |
+| 提取指定原厂镜像并校验 | `python OPD2515-OTA-Helper/tools/extract_selected_payload.py --help` | 无 |
+| 校验 OTA 整包签名与 CRC | `python OPD2515-OTA-Helper/tools/verify_ota_zip.py --help` | 无 |
+| 构建新 OTA 模块 | `python ota-helper/build.py` | 无 |
+| 审查并生成每次 OTA 保留包 | `python ota-helper/prepare_update.py --help` | 无 |
+
+新保留包生成器使用上述经过测试的解析器，同时核验整包签名、完整固件清单和本次备份。具体命令见 [OTA 助手说明](../ota-helper/README.md)。历史 `review.py` / `Review-OTA.ps1` 面向旧 RC2，研究新版本使用 `ota-helper/prepare_update.py`。
+
+## 设备侧工具
+
+| 工具 | 作用与写入范围 |
+|---|---|
+| `guarded_17.py check` | 读取设备，验证本次专用 500 → 103 计划 |
+| `guarded_17.py apply` | 写目标 init_boot、ABL 和共享 EFI / 菜单；固定历史版本、槽位和摘要 |
+| `precheck_deferred_17.py` | 读取并审查 103 本地安装与延期激活条件 |
+| `activate_deferred_17.py` | 经专用检查后调用 UpdateEngine 激活目标槽，并暂停更新 UI |
+| 新模块的 status / export / import / preview | 检查设备、导出启动备份、导入保留包或预览；不写启动分区 |
+| 新模块的 apply | 有确认短语才备份并写目标 init_boot、ABL 与 Normal EFI，随后回读 |
+
+专用 Python 设备工具在 `OPD2515-OTA-Helper/tools/`。使用前明确自己的设备选择：
 
 ```powershell
 $env:OPD_ADB = 'C:/Android/Sdk/platform-tools/adb.exe'
-$env:OPD_SERIAL = '填写自己 adb devices 中的序列号'
+$env:OPD_SERIAL = '填写 adb devices 显示的目标序列号'
 python OPD2515-OTA-Helper/tools/guarded_17.py --help
 ```
 
-修改环境变量只选择设备，不会让不匹配的固件通过。这里不提供跳过检查或固定 a/b 的通用刷写包装器。原公开计划含本次设备分区拓扑，其他设备需独立核对；不要为通过检查而机械替换摘要。
+设备选择不改变工具内部的版本与槽位检查。历史 b → a 计划不能直接作为他人的通用计划。
 
-驱动脚本不包含本机 Driver Store 路径，先指定实际设备实例和已下载的原始签名 INF：
+Windows D00D Bootloader 驱动辅助工具：
 
 ```powershell
 ./tools/Bind-Fastboot-Driver.ps1 -InstanceId '实际设备实例ID' -InfPath 'C:/drivers/usb_driver/android_winusb.inf'
 ```
 
-默认只枚举并验证。明确添加 `-Install` 才绑定，安装需管理员权限。该流程只针对 D00D，本次没有修改 INF 或禁用 Windows 签名验证。
+默认仅检查明确的实例和 Google 原始签名 INF；添加 `-Install` 才进行绑定，需管理员权限。
 
-本仓库未发布或研究私钥/keybox 导出与替换。KSU root 成功也不代表 Google Play Integrity Device/Strong 通过。
+ADB / Fastboot 从 [Android 官方](https://developer.android.com/tools/releases/platform-tools)获取，驱动从 [Google USB Driver](https://developer.android.com/studio/run/win-usb)获取。自行重编 preload 需要 NDK r27c 和 GNU Make；普通材料校验不需要这些编译工具。根权限与 Google Play Integrity Device / Strong 是不同的验证项目。

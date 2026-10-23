@@ -21,3 +21,17 @@ jobs:
       - run: python tools/verify_materials.py .
       - run: python -m unittest discover -s OPD2515-OTA-Helper/tests -p 'test_*.py' -v
       - run: node OPD2515-OTA-Helper/tests/test_webui.mjs
+      - run: python -m unittest discover -s ota-helper/tests -p 'test_*.py' -v
+      - run: node ota-helper/tests/test_webui.mjs
+      - name: Desktop-only shell transaction with all 39 firmware fixtures
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y busybox-static
+          chmod +x OPD2515-OTA-Helper/tests/bb.sh
+          python ota-helper/tests/test_update.py --shell-fixture ota-helper/test-output/shell
+          OPD_TEST_BB=/usr/bin/busybox bash ota-helper/tests/test_core.sh ota-helper/test-output/shell
+      - run: python ota-helper/build.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OPD2515-OTA-Helper-preview
+          path: ota-helper/dist/

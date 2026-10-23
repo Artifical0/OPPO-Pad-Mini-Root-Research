@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>OPPO Pad Mini OTA 助手</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="eyebrow">OPD2515 · KernelSU · 0.2.0-rc1</p>
+  <h1>逐次审查，辅助保留 root</h1>
+  <p>每次升级先检查完整固件，再安装 OTA。显示“等待重启”后，在这里保留 root 和 GBL。</p>
+  <div class="notice">研究预览版：尚未真机安装或 OTA 验证。仅接受底层固件不变的完整包；XBL、防回滚或 KMI 变化会停止。不能保证未知版本可用。</div>
+  <section>
+    <h2>当前状态</h2>
+    <button data-action="status">刷新状态</button>
+    <pre id="status">正在读取…</pre>
+  </section>
+  <section>
+    <h2>1. 升级前备份</h2>
+    <p>导出当前启动文件到 Download/OPD2515-OTA。先停用其他模块并重启，确认快照合并结束。把导出的 tar.gz 复制到电脑，连同当前和目标两个完整包一起检查。</p>
+    <p>这份备份覆盖启动文件。应用数据请另行备份。</p>
+    <button data-action="export">备份并导出</button>
+  </section>
+  <section>
+    <h2>2. 导入本次保留包</h2>
+    <p>电脑检查通过后，把 OPD2515-OTA-approved.zip 放到 Download 根目录，并粘贴电脑报告中的 SHA256。</p>
+    <label for="digest">电脑报告中的 SHA256</label>
+    <input id="digest" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="64 位小写摘要">
+    <button data-action="import">校验并导入</button>
+  </section>
+  <section>
+    <h2>3. OTA 完成后保留</h2>
+    <p>在官方系统更新中安装已经检查的完整包，等到“重启”按钮出现。此时先回到这里检查。</p>
+    <button data-action="preview">检查 OTA 和目标槽位</button>
+    <p>检查通过后，按结果输入 APPLY_a 或 APPLY_b。执行完成并显示 SUCCESS 后再重启。</p>
+    <label for="ack">检查结果中的确认短语</label>
+    <input id="ack" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="先检查，再输入确认短语">
+    <button data-action="apply" class="primary">保留本次 root 和 GBL</button>
+  </section>
+  <section>
+    <h2>操作结果</h2>
+    <p id="activity" role="status" aria-live="polite">就绪</p>
+    <pre id="result">操作结果会显示在这里。</pre>
+  </section>
+  <details><summary>以后每次升级怎么做</summary>
+    <ol><li>备份应用数据，导出新的启动文件备份。</li><li>获取目标官方完整固件，在电脑运行附带的检查工具。</li><li>检查通过后导入本次保留包。</li><li>安装该版本的官方完整 OTA，等待重启。</li><li>回到模块检查并执行保留，显示 SUCCESS 后重启。</li><li>确认系统版本已更新、KernelSU 正常、Shell 能获得 root。</li></ol>
+    <p>本版要求完整 OTA，暂不支持增量包。“保留包”绑定本次版本和槽位，每次都要重新生成。</p>
+    <p>检查失败或操作中断时先不要重启。查看仓库 ota-helper/README.md。此模块不会代替更新器激活槽位。</p>
+  </details>
+</main><script src="app.js"></script>
+</body>
+</html>
